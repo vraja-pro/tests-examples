@@ -5,10 +5,10 @@ import LoginForm from '../js/LoginForm';
 
 describe('LoginForm', () => {
   it('renders login form initially', () => {
-    const { getByLabelText, getByText, debug } = render(<LoginForm />);
-    console.log(getByLabelText('Username:').outerHTML);
-     expect(getByLabelText('Username:')).toBeInTheDocument();
-     expect(getByLabelText('Password:')).toBeInTheDocument();
+    const { getByLabelText, getByText } = render(<LoginForm />);
+
+    expect(getByLabelText('Username:')).toBeInTheDocument();
+    expect(getByLabelText('Password:')).toBeInTheDocument();
     expect(getByText('Login')).toBeInTheDocument();
   });
 
