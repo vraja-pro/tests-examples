@@ -13,6 +13,9 @@ class Calculator {
      * @return void
      */
     public function add($a, $b) {
+        if( !$a ){
+            return $b;
+        }
         return $a + $b;
     }
 
