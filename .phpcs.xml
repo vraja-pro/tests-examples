@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<ruleset name="Project Coding Standards">
+    <description>Rules for checking coding standards in the project.</description>
+
+    <!-- Directories to scan -->
+    <file>includes</file>
+    <file>tests</file>
+
+    <!-- Coding standard to use (e.g., PSR12, PSR2, etc.) -->
+    <rule ref="PSR12" />
+
+    <!-- Exclude specific rules if needed -->
+    <exclude name="Generic.Files.LineLength" />
+</ruleset>
